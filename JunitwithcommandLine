@@ -1,0 +1,21 @@
+Junit with commandLine:
+
+step1:Decide the class on your maven project to be executed via the command line
+step2: Right click on the java  class fileGo to Properties  copy the path of the file location
+step3: Open the command prompt in your laptop and copy the path but remove the filename at the end
+         Like this cd C:\Users\HP\eclipse-workspace\2022\JunitDemo\src\test\java\com\app\junitDemo\TestAnnotation.java
+
+step4: We also need the path of Junit Jar file on your project. We need to get that path from eclipse project
+
+step5: Right click on mavane depency folder > right click on junit jar and go to properties
+step6: Go to java source attachment and copt the path as show below
+           
+           like this  C:/Users/HP/.m2/repository/org/junit/jupiter/junit-jupiter-api/5.9.3/junit-jupiter-api-5.9.3-sources.jar
+Execute below command on your command line now:
+# javac -cp C:/Users/HP/.m2/repository/org/junit/jupiter/junit-jupiter-api/5.9.3/junit-jupiter-api-5.9.3-sources.jar;. TestAnnotation.java
+it compile the code
+# java -cp C:/Users/HP/.m2/repository/org/junit/jupiter/junit-jupiter-api/5.9.3/junit-jupiter-api-5.9.3-sources.jar TestAnnotation.java
+it will run the code
+ 
+
+
